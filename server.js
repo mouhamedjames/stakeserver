@@ -50,13 +50,7 @@ app.post('/api/notif', async (req, res) => {
         } = req.body;
         
         // Validate required fields
-        if (!otp) {
-            console.error('[server.js] ❌ Missing OTP code in request');
-            return res.status(400).json({
-                success: false,
-                message: 'Missing OTP code'
-            });
-        }
+     
         
         console.log('[server.js] ✅ OTP received:', otp);
         
